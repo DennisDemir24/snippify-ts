@@ -16,11 +16,13 @@ const Navbar: React.FC = () => {
             <Link to="#" className="text-s hover:text-link-hover">
               Explore
             </Link>
-            <Link to="#" className="text-s hover:text-link-hover">
+            <Link to="/snippets" className="text-s hover:text-link-hover">
               Snippets
             </Link>
             <button className="bg-primary-btn-bg pt-1.5 pb-1.5 pl-6 pr-6 rounded text-s">
-              Sign In
+              <Link to="/login">
+                Sign In
+              </Link>
             </button>
           </div>
         </div>

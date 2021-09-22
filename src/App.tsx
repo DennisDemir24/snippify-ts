@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,6 +9,7 @@ import Login from './components/Views/Auth/Login'
 
 // UI Components
 import Navbar from './components/UI/Navbar/Navbar'
+import Snippets from "./components/Views/Snippets/Snippets";
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
               <div className="container">
                 <Switch>
                   <Route exact path="/login" component={Login} />
+                  <Route exact path="/snippets" component={Snippets} />
                 </Switch>
               </div>
             </>
